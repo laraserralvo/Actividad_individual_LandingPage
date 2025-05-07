@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --sobremi: #983281;
+    --proyectos: #00000072;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; /* base 16px */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fondo\ papel.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 10em;
+    padding: 2.5em 6.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+header .emoji img {
+    width: 8.75em; /* 140px */
+    height: auto;
+    margin-left: 8.125em; /* 130px */
+    margin-bottom: 0.625em; /* 10px */
+}
+
+header .emoji:hover {
+    opacity: 0.75;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar li {
+    list-style: none;
+    margin-left: 2.5em; /* 40px */
+    margin-bottom: 0.625em; /* 10px */
+}
+
+header .navbar li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    padding: 0.313em; /* 5px */
+    font-size: 1.063em; /* 17px */
+    letter-spacing: 0.125em; /* 2px */
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+header .navbar li a:hover {
+    border-bottom: 0.313em solid black; /* 5px */
+    padding: 0.125em; /* 2px */
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-top: auto;
+    width: 100%;
+    height: 2em;
+}
+
+.copyright {
+    color: whitesmoke;
+    font-size: 0.875em; /* 14px */
+    display: flex;
+    position: relative;
+    left: 2em;
+}
+
+.redesSociales {
+    display: flex;
+    gap: 0.9375em; /* 15px */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.3em;
+    margin-right: 1.9em;
+}
+
+.redesSociales li a {
+    color: whitesmoke;
+    font-size: 1.4em;
+}
+
+.redesSociales li a:hover {
+    color: var(--sobremi);
+}
+
+/*********** INDEX **********/
+#cuadradoblanco {
+    background-image: url(img/periodicos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: solid 0.15em whitesmoke;
+    display: flex;
+    position: relative;
+    bottom: 2em;
+    margin: 0 auto;
+    width: 44em;
+    height: 32em;
+}
+
+
+.imgBox {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox img {
+    margin-top: 1em;
+    margin-left: -4em;
+    height: 460px; /* un poco más grande la foto */
+    object-fit: cover;
+}
+
+.texto {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    bottom: 21em;
+    align-items: flex-start; /* alineado a la izquierda */
+    margin-left: 24.5em;
+}
+
+#nombre {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 58px;
+    color: whitesmoke;
+    line-height: 0.9; /*esto ajusta el interlineado*/
+    letter-spacing: 3px; /*aumenta el espacio entre letras*/
+}
+
+#profesion {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: whitesmoke; 
+    letter-spacing: 5.8px;
+    margin-bottom: 13px;
+    margin-top: 0.5em;
+    
+}
+
+.buttonindex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* separación entre los dos botones */
+    margin-top: 20px; /* espacio entre el texto y los botones */
+}
+
+.primary-btn{
+    background-color: var(--sobremi);
+    color:whitesmoke;
+    border-style: none;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: solid 0.1rem var(--proyectos);
+    text-decoration: none;
+}
+
+.outline-btn{
+    background-color: var(--proyectos);
+    color: whitesmoke;
+    border: solid 0.1rem var(--primary);
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border: solid 0.1rem var(--sobremi);
+    text-decoration: none;
+}
+
+.primary-btn:hover{
+    background-color: var(--proyectos);
+    color:whitesmoke;
+    border: solid 0.1rem var(--sobremi);
+    transition: all 0.3s;
+}
+
+.outline-btn:hover{
+    background-color:var(--sobremi);
+    color:whitesmoke;
+    border: solid 0.1rem var(--proyectos);
+    transition: all 0.3s;
+}
+
+/********* PROYECTOS ***********/
+.proyectos {
+    padding: 3em 2em;
+    text-align: center;
+    margin-top: -5em; /* Ajustá este valor a lo que necesites */
+    z-index: 1;
+    position: relative;
+    
+  }
+  .titulo {
+    font-family: "Cal Sans", sans-serif;
+    font-style: normal;
+    font-size: 2.5rem;
+    background-color: white;
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-weight: 400;
+    margin-bottom: 1em;
+    line-height: 0.6em;
+    letter-spacing: 0.1em;
+  }
+  
+  .descripcion {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: whitesmoke;
+    max-width: 40em;
+    margin: 0 auto 2em auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #000;
+  }
+  
+  .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+  }
+  
+  .tarjeta {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.5em;
+    box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.2);
+    width: 22em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tarjeta img {
+    width: 94%;
+    height: auto;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+  }
+  
+  .tarjeta p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #000;
+    line-height: 1.4em;
+  }
+  
+  .boton {
+    background-color: var(--sobremi);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .boton:hover {
+    background-color: var(--proyectos);
+  }
+
+  /************** CONTACTO *************/
+  .formulario {
+    background-image: url(img/periodicos.jpg);
+    background-color: #6f6f6f;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.nombre-apellido {
+    display: flex;
+    gap: 20px;
+}
+
+.nombre-apellido div label {
+    margin-bottom: 9px; 
+}
+
+.nombre-apellido input {
+    margin-top: 5px; 
+}
+
+.nombre-apellido div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.boton-enviar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-enviar {
+    background-color: var(--sobremi);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-enviar:hover {
+    background-color: var(--proyectos);
+  }
+
+  /******************** CURRICULUM ****************/
+  .about-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .descripcion-curriculum {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    max-width: 56em;
+    margin: -18px auto 2em auto;
+    font-size: 1.05em;
+    line-height: 1.7em;
+    color: black;
+    text-align: justify;
+  }
+
+  .banner-bajo{
+    background-color: rgba(0, 0, 0, 0.3); /* Negro con 70% de opacidad */
+    width: 100%;
+    height: 16em;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+  }
+  
+  .stats div {
+    font-size: 31px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 10px;
+    text-decoration: underline var(--sobremi);
+  }
+  
+  .icons {
+    display: flex;
+    margin-bottom: 5em;
+    justify-content: center;
+    gap: 175px;
+    flex-wrap: wrap;
+  }
+  
+  .icons img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.05);
+  }
